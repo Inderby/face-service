@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document(collation = "Diagnosis")
+@Document(collection = "Diagnosis")
 public class Diagnosis {
     @Id @Field(name = "_id", targetType = FieldType.OBJECT_ID) String id;
     @Field(name = "frontalis_muscle") boolean frontalis_muscle;

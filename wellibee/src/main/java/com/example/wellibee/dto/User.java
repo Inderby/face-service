@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document(collation = "User")
+@Document(collection = "User")
 public class User {
     @Id @Field(name = "_id", targetType = FieldType.OBJECT_ID)String id;
     @Field(name = "nickname") String nickname;
