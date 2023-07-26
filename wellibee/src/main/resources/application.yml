@@ -1,0 +1,30 @@
+spring:
+  data:
+    mongodb:
+      database: face-service
+      port: 27017
+      host: localhost
+  servlet:
+    multipart:
+      max-request-size: 10MB
+      max-file-size: 10MB
+
+facePlusPlus:
+  client:
+    key: ENC(FZoz8mZpBY2Oe0xtmJjwBp1MuVZcHixBys2c9H0zCxq0bSu6RsQiRQL1xxKP4c6L)
+    secret: ENC(mLcenlEMAww9OtMnz5sB0nqUy+ZETfwp570JZX6eRC66y7zQUOsVu7xC+PcRH6nJ)
+  detect_url: https://api-us.faceplusplus.com/facepp/v3/detect
+
+server:
+  port: 8080
+cloud:
+  aws:
+    credentials:
+      access-key: ENC(YZNAo6ZWnQypTKEVUPGQ9iLr/mCNw1sxYdLPoOSD0hPMYMmJFcXWJhZFLh6ZVvXyHWPPqMhzDjc=)
+      secret-key: ENC(mbNrSlGTwXWr/4z1bEhL50H/MAnu3xq/HYFyoBJDzLW2cbNqGh8GV1QnsvJy28/LLDT4JbTSwPU=)
+    s3:
+      bucket: test-for-face-api
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
